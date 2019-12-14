@@ -18,18 +18,28 @@ contributors are allowed into this project.
 
 
 ## Installation
-
+     $ mv iotchip_alpha/ iotchip
+     $ cd iotchip/
      $ sudo chmod +x install.sh
      $ sudo ./install.sh
 
 Choose options in this sequence (you might be prompted to reboot when necessary)
 
-(2 , 1)
-(2 , 2)
-(3)
-(4)
-(7)
-(5)
+     $ (2 , 1)
+     $ (2 , 2)
+     $ (3)
+     $ (4)
+     $ (7) -->reboot
+     $ (7) -- again!!
+     $ (5)
+
+
+
+Check whether daemons run flawlessly
+
+     $ sudo systemctl status app_get_json.service
+     $ sudo systemctl status app_send_json.service
+
 
 ## Edit configuration, key values, pins  (advanced users)
      $ nano /conf/keys.ini 
