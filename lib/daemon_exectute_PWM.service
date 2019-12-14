@@ -1,0 +1,11 @@
+[Unit]
+Description=Reads and execut PWM file whenever a change is made
+After=multi-user.target
+ 
+[Service]
+Type=simple
+ExecStart=/usr/bin/python /home/pi/iotchip/bin/execute_PWM_data.py
+Restart=on-abort
+ 
+[Install]
+WantedBy=multi-user.target

@@ -1,0 +1,10 @@
+[Unit]
+Description=start flask server for wifi config
+ 
+[Service]
+Type=simple
+ExecStart=/usr/bin/python /home/pi/iotchip/demo/sunset.py
+Restart=on-abort
+ 
+[Install]
+WantedBy=multi-user.target

@@ -1,0 +1,11 @@
+[Unit]
+Description=Initialize PH, button, 5 LEDs
+After=multi-user.target
+ 
+[Service]
+Type=simple
+ExecStart=/usr/bin/python /home/pi/iotchip/bin/button_interface.py
+Restart=on-failure
+ 
+[Install]
+WantedBy=multi-user.target

@@ -1,0 +1,10 @@
+[Unit]
+Description=send json from server and write pwm conf file
+ 
+[Service]
+Type=simple
+ExecStart=/usr/bin/python /home/pi/iotchip/bin/send_data.py
+Restart=on-failure
+ 
+[Install]
+WantedBy=multi-user.target

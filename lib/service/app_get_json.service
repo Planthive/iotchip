@@ -1,0 +1,12 @@
+[Unit]
+Description=get json from server and write pwm conf file
+ 
+[Service]
+Type=simple
+ExecStart=/usr/bin/python /home/pi/iotchip/bin/get_data.py
+StartLimitIntervalSec=9
+StartLimitBurst=10
+Restart=on-failure
+ 
+[Install]
+WantedBy=multi-user.target
