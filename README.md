@@ -29,8 +29,8 @@ Choose options in this sequence (you might be prompted to reboot when necessary)
      $ (2 , 2)
      $ (3)
      $ (4)
-     $ (7) -->reboot
-     $ (7) -- again!!
+     $ (7) --> reboot
+     $ (7) --> again!!
      $ (5)
 
 
