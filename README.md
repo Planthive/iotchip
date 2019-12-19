@@ -46,6 +46,7 @@ Check whether daemons run flawlessly
 
 
 ## Git commands
+
 	$ git pull origin dev
 	$ git fetch origin dev
 	$ git clone ...
