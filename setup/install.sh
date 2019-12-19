@@ -162,7 +162,7 @@ if (( userAction > 0 )) && (( userAction < 26 )) ; then
         sudo apt-get -y install python RPi.GPIO
         	# Adafruit_Python_MCP3008
         cd "$ROOT_DIR/lib"
-        # sudo git clone https://github.com/adafruit/Adafruit_Python_MCP3008.git
+        git clone https://github.com/adafruit/Adafruit_Python_MCP3008.git
         cd "$ROOT_DIR/lib/Adafruit_Python_MCP3008"
         sudo python setup.py install
 
@@ -170,19 +170,19 @@ if (( userAction > 0 )) && (( userAction < 26 )) ; then
         cd "$ROOT_DIR/lib"
         sudo apt-get install git build-essential python-dev
         cd "$ROOT_DIR/lib"
-        # sudo git clone https://github.com/adafruit/Adafruit_Python_PCA9685.git
+        git clone https://github.com/adafruit/Adafruit_Python_PCA9685.git
         cd "$ROOT_DIR/lib/Adafruit_Python_PCA9685"
         sudo python setup.py install
         
         ## Install  Hygrometer Si7021
         cd "$ROOT_DIR/lib"
-        #git clone https://github.com/herm/Si7021
+        git clone https://github.com/herm/Si7021
         cd "$ROOT_DIR/lib/Si7021"
         sudo python setup.py install
         
         ## Install waterlevel proximity
         cd "$ROOT_DIR/lib"
-        #git clone https://github.com/altosz/rpisensors.git
+        git clone https://github.com/altosz/rpisensors.git
         cd "$ROOT_DIR/lib/rpisensors"
         sudo python setup.py install
 
@@ -195,7 +195,7 @@ if (( userAction > 0 )) && (( userAction < 26 )) ; then
         
         ## get mcp9600 python class
         cd "$ROOT_DIR/lib"
-        #git clone https://github.com/pimoroni/mcp9600-python
+        git clone https://github.com/pimoroni/mcp9600-python
         cd "$ROOT_DIR/lib/mcp9600-python"
         sudo chmod +x install.sh
         sudo ./install.sh
@@ -205,7 +205,7 @@ if (( userAction > 0 )) && (( userAction < 26 )) ; then
         # dependencies
         cd "$ROOT_DIR/lib"
         sudo apt-get install git python-setuptools python-smbus python-six python3-six 
-        #git clone https://github.com/MLAB-project/pymlab
+        git clone https://github.com/MLAB-project/pymlab
         cd "$ROOT_DIR/lib/pymlab"
         sudo python setup.py develop
         
@@ -214,7 +214,7 @@ if (( userAction > 0 )) && (( userAction < 26 )) ; then
         
         # install wpaconfig for WiFi configuration
         cd "$ROOT_DIR/lib"
-        #git clone https://github.com/proxypoke/wpa_config.git
+        git clone https://github.com/proxypoke/wpa_config.git
         cd "$ROOT_DIR/lib/wpa_config"
         sudo python setup.py install
         
