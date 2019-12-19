@@ -25,7 +25,7 @@ class ExecutePWM():
 
     def soft_start(self,channel,start_duty,stop_duty):
         print('channel ' + str(channel)  + '   start ' + str(start_duty) + '---> stop  ' + str(stop_duty) )
-        if start_duty +20 < stop_duty:
+        if start_duty < stop_duty:
             for duty in range(start_duty,stop_duty,20):
                 try:
                     self.pwm.set_pwm(channel, 0, duty)
@@ -33,7 +33,7 @@ class ExecutePWM():
                 except:
                     print("error start-up")
                 time.sleep(0.01)
-        elif start_duty-20 > stop_duty:
+        elif start_duty > stop_duty:
             for duty in range(start_duty,stop_duty,-20):
                 try:
                     self.pwm.set_pwm(channel, 0, duty)
