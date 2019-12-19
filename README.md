@@ -79,7 +79,7 @@ Check whether daemons run flawlessly
     $ sudo git commit -m ".gitignore is now working"
 
 ## Application Context Path
-The software application directories are located under `/opt/iotchip` or `/home/pi/iotchip`
+The software application directories are located under `/home/pi/iotchip`
 This path is defined in multiple locations through predefined variables for python 
 or hardcoded in shell files:
 * <b>/bin/beans/utils</b> : for Python context, `utils.getContextPath()` will 
@@ -98,6 +98,7 @@ application to fail!</b>
 
 ## Reserved Pins
 * GPIO Pin / Pullup : 4
+Blabla
 
 
 
