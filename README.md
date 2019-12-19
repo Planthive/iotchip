@@ -47,24 +47,36 @@ Check whether daemons run flawlessly
 
 ## Git commands
 
-	$ git pull origin dev
-	$ git fetch origin dev
-	$ git clone ...
-	$ 
-	$ // stores the credentials indefinitely:
-	$ git config credential.helper store
-	$ // save credentials for 1 hour
-	$ git config credential.helper 'cache --timeout=3600'
-	$ // setup config
-	$ sudo git config --global user.email "git.reporter@planthive.com"
-	$ sudo git config --global user.name "Git Reporter"
-	$ // force pull
-	$ sudo git fetch origin alpha-stable
-	$ sudo git reset --hard FETCH_HEAD
-	$ // Clean up worktree to match .gitignore
-	$ sudo git rm -r --cached .
-	$ sudo git add .
-	$ sudo git commit -m ".gitignore is now working"
+    $ \\ config local repository
+    $ sudo git config --global user.email "socialist.shrimp@planthive.com"
+    $ sudo git config --global user.name "Yo Mama"
+
+    $ \\ clone repo
+    $ git clone https://github.com/Planthive/iotchip_alpha
+
+    $ \\ pull origin
+    $ git pull orign master
+    
+    $ \\ other branches
+    $ git pull origin dev
+    $ git fetch origin dev
+    $ git clone ...
+    $ 
+    $ // stores the credentials indefinitely:
+    $ git config credential.helper store
+    $
+    $ // save credentials for 1 hour
+    $ git config credential.helper 'cache --timeout=3600'
+    $ // setup config
+
+    $ // force pull
+    $ sudo git fetch origin alpha-stable
+    $ sudo git reset --hard FETCH_HEAD
+   
+    $ // Clean up worktree to match .gitignore
+    $ sudo git rm -r --cached .
+    $ sudo git add .
+    $ sudo git commit -m ".gitignore is now working"
 
 ## Application Context Path
 The software application directories are located under `/opt/iotchip` or `/home/pi/iotchip`
