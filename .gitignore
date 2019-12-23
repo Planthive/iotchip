@@ -1,6 +1,4 @@
-# Byte-compiled / optimized / DLL files
-conf/
-lib/
+# conf and data files
 *.json
 *.pyc
 *.ini
